@@ -169,8 +169,10 @@ var books = [{
 	},
 	"description": "Drawing on the wisdom of 2,500 years of contemplative non-religious writing on all that it means to be human – from the origins of the universe to small matters of courtesy and kindness in everyday life – A. C. Grayling, Britain's most popular and widely read philosopher, has created a secular bible."
 }];
+$( document ).ready(function(){
+	m.mount(document.getElementById('book_hub'),BookHubComponent);	
+})
 
-m.mount(document.getElementById('book_hub'),BookHubComponent);
 
 // defining BookHubComponent  
 var BookHubComponent = {};
